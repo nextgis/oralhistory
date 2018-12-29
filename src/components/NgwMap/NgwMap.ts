@@ -1,8 +1,14 @@
 import WebMap, { MapOptions, LayerMem, LayerAdapter } from '@nextgis/webmap';
-import MapAdapter from '@nextgis/mapboxgl-map-adapter';
-import 'mapbox-gl/dist/mapbox-gl.css';
+
+// import MapAdapter from '@nextgis/mapboxgl-map-adapter';
+// import 'mapbox-gl/dist/mapbox-gl.css';
+
+import MapAdapter from '@nextgis/ol-map-adapter';
+import 'ol/ol.css';
+
 // import MapAdapter from '@nextgis/leaflet-map-adapter';
 // import 'leaflet/dist/leaflet.css';
+
 import { Vue, Component, Prop } from 'vue-property-decorator';
 // @ts-ignore
 import geojsonExtent from '@mapbox/geojson-extent';
